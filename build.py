@@ -70,7 +70,8 @@ for page in ("privacy", "support"):
         ("../../theme.js", "../theme.js"),
         ('href="../../feed.xml"', f'href="{LAB}feed.xml"'),
         ('href="../../"', f'href="{LAB}"'),
-        (f"https://innovatory.xyz/scratchd/{page}/", f"{SITE}{page}/"),
+        # No canonical rewrite here. Both copies of these pages already declare
+        # scratchd.net as canonical, so the innovatory copy points here too.
     ])
 
 print("Files:")
