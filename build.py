@@ -83,6 +83,8 @@ for src_rel, dst_rel in [
     ("assets/scratchd/icon-128.png", "assets/scratchd/icon-128.png"),
     ("assets/scratchd/icon-256.png", "assets/scratchd/icon-256.png"),
     ("assets/scratchd/icon-512.png", "assets/scratchd/icon-512.png"),
+    ("assets/scratchd/mac-app-store-badge-black.svg", "assets/scratchd/mac-app-store-badge-black.svg"),
+    ("assets/scratchd/mac-app-store-badge-white.svg", "assets/scratchd/mac-app-store-badge-white.svg"),
 ]:
     out = DST / dst_rel
     out.parent.mkdir(parents=True, exist_ok=True)
