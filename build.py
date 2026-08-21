@@ -64,7 +64,7 @@ rewrite("scratchd/index.html", "index.html", [
     (FOOTER_ANCHOR, FOOTER_WITH_XREF),
 ])
 
-for page in ("privacy", "support"):
+for page in ("privacy", "support", "compare"):
     rewrite(f"scratchd/{page}/index.html", f"{page}/index.html", [
         ("../../assets/", "../assets/"),
         ("../../theme.js", "../theme.js"),
