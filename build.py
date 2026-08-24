@@ -76,8 +76,40 @@ for page in ("privacy", "support", "compare"):
 
 print("Files:")
 
+rewrite("scratchd/scratchd.css", "scratchd.css", [
+    (""".nav-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.nav-home:hover { color: var(--text); }
+.nav-home img { width: 22px; height: 22px; display: block; }""",
+     """.nav-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.nav-home:hover { color: var(--text); }
+.nav-home img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--icon-ring);
+}"""),
+])
+
 for src_rel, dst_rel in [
-    ("scratchd/scratchd.css", "scratchd.css"),
     ("theme.js", "theme.js"),
     ("assets/logo-64.png", "assets/logo-64.png"),
     ("assets/scratchd/icon-128.png", "assets/scratchd/icon-128.png"),

@@ -149,14 +149,20 @@ a { color: var(--link); }
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: var(--muted);
+  color: var(--cream);
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 .nav-home:hover { color: var(--text); }
-.nav-home img { width: 22px; height: 22px; display: block; }
+.nav-home img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--icon-ring);
+}
 
 .nav-links {
   display: flex;
