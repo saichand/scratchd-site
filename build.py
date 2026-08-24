@@ -58,8 +58,8 @@ rewrite("scratchd/index.html", "index.html", [
     ("../theme.js", "theme.js"),
     ('href="../feed.xml"', f'href="{LAB}feed.xml"'),
     ('href="../"', f'href="{LAB}"'),
-    ("https://innovatory.xyz/assets/scratchd/icon-512.png",
-     f"{SITE}assets/scratchd/icon-512.png"),
+    ("https://innovatory.xyz/assets/scratchd/og.jpg",
+     f"{SITE}assets/scratchd/og.jpg"),
     ("https://innovatory.xyz/scratchd/", SITE),
     (FOOTER_ANCHOR, FOOTER_WITH_XREF),
 ])
@@ -83,6 +83,7 @@ for src_rel, dst_rel in [
     ("assets/scratchd/icon-128.png", "assets/scratchd/icon-128.png"),
     ("assets/scratchd/icon-256.png", "assets/scratchd/icon-256.png"),
     ("assets/scratchd/icon-512.png", "assets/scratchd/icon-512.png"),
+    ("assets/scratchd/og.jpg", "assets/scratchd/og.jpg"),
     ("assets/scratchd/mac-app-store-badge-black.svg", "assets/scratchd/mac-app-store-badge-black.svg"),
     ("assets/scratchd/mac-app-store-badge-white.svg", "assets/scratchd/mac-app-store-badge-white.svg"),
 ]:
